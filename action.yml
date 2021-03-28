@@ -5,7 +5,7 @@ inputs:
   rit-command:  # id of input
     description: 'Ritchie command'
     required: true
-    default: '--version'
+    default: 'rit --version'
 outputs:
   rit-output: # id of output
     description: 'The Ritchie command result'
@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.repo-to-add }}
+    - ${{ inputs.rit-command }}
