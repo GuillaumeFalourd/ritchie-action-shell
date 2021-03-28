@@ -1,6 +1,6 @@
 name: Ritchie CLI actions
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   action_job:
