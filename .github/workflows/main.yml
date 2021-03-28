@@ -8,7 +8,6 @@ jobs:
     name: Ritchie Action
     steps:
     - name: Run Ritchie Action Command
-      id: ritchie-repo
       uses: GuillaumeFalourd/ritchie-docker-actions@v6
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
