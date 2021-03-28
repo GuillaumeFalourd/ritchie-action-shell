@@ -11,5 +11,4 @@ jobs:
       uses: GuillaumeFalourd/ritchie-docker-actions@main
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
-#        rit-formula-with-input-flags: rit demo coffee-shell --rit_name='Dennis' --rit_coffee_type='espresso' --rit_delivery=false
-      run: rit demo coffee-shell --rit_name='Dennis' --rit_coffee_type='espresso' --rit_delivery=false
+        rit-formula-with-input-flags: rit demo coffee-shell
