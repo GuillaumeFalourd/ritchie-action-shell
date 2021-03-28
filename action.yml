@@ -1,0 +1,17 @@
+# action.yml
+name: 'Ritchie CLI action'
+description: 'Import specific repository'
+inputs:
+  repo-to-add:  # id of input
+    description: 'Repo to Import'
+    required: true
+    default: 'https://github.com/GuillaumeFalourd/formulas-github'
+outputs:
+  time: # id of output
+    description: 'The repo we added'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - sudo rit add repo --provider="Github" --name="formulas" --repoUrl="${{ inputs.repo-to-add }}" --priority=1
+#    - ${{ inputs.repo-to-add }}
