@@ -9,6 +9,7 @@ jobs:
     steps:
     - name: Run Ritchie Action Command
       id: ritchie-repo
-      uses: GuillaumeFalourd/ritchie-docker-actions@v5
+      uses: GuillaumeFalourd/ritchie-docker-actions@v6
       with:
-        rit-command: rit add repo --provider=Github --name=formulas-repo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1 && rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
+        rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
+        rit-formula-with-input-flags: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false

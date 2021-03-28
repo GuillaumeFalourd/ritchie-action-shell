@@ -2,15 +2,17 @@
 name: 'Ritchie CLI action'
 description: 'Import specific repository'
 inputs:
-  rit-command:  # id of input
-    description: 'Ritchie command'
+  rit-repo-url:  # id of input
+    description: 'Ritchie repository'
+    required: true
+    default: 'https://github.com/ZupIT/ritchie-formulas-demo'
+  rit-formula-with-input-flags:  # id of input
+    description: 'Ritchie formula'
     required: true
     default: 'rit --version'
-outputs:
-  rit-output: # id of output
-    description: 'The Ritchie command result'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.rit-command }}
+    - ${{ inputs.rit-repo-url }}
+    - ${{ inputs.rit-formula-with-input-flags }}
