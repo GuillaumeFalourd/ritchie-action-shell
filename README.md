@@ -6,8 +6,8 @@
 name: Action workflow
 
 on:
-   schedule:
-     - cron: '0 0 * * *'
+ push:
+ workflow_dispatch:
 
 jobs:
   action_job:
