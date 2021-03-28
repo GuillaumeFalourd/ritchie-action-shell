@@ -1,15 +1,17 @@
-# action.yml
 name: 'Ritchie CLI action'
-description: 'Import specific repository'
+
+description: 'Execute Ritchie CLI actions'
+
 inputs:
-  rit-repo-url:  # id of input
+  rit-repo-url:
     description: 'Ritchie repository'
     required: true
     default: 'https://github.com/ZupIT/ritchie-formulas-demo'
-  rit-formula-with-input-flags:  # id of input
+  rit-formula-with-input-flags:
     description: 'Ritchie formula'
     required: true
     default: 'rit --version'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
