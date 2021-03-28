@@ -17,4 +17,4 @@ jobs:
       id: ritchie-formula
       uses: GuillaumeFalourd/ritchie-docker-actions@v5
       with:
-        rit search wiki --rit_keywords=Ayrton Senna --rit_language=en
+        rit-command: rit search wiki --rit_keywords=Ayrton Senna --rit_language=en
