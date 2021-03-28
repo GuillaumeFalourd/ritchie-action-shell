@@ -8,5 +8,7 @@ echo "/RIT -------------"
 ls -lha /root/.rit
 echo "GITHUB -------------"
 ls -lha /github/home
+echo "GITHUB RIT -------------"
+ls -lha /github/home/.rit
 
 sudo $2
