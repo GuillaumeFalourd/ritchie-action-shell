@@ -5,7 +5,9 @@
 ```bash
 name: Action workflow
 
-on: [push, workflow_dispatch]
+on:
+   schedule:
+     - cron: '0 0 * * *'
 
 jobs:
   action_job:
