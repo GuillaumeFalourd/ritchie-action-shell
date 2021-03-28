@@ -1,6 +1,6 @@
 # ritchie-docker-actions
 
-This action would currently only works for Ritchie CLI formulas in Shell.
+This Github action currently only works for Ritchie CLI formulas in Shell.
 
 ## Use case
 
