@@ -12,5 +12,4 @@ jobs:
       uses: GuillaumeFalourd/ritchie-docker-actions@v5
       with:
         rit-command: |
-          rit add repo --provider=Github --name=formulas-repo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
-          rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
+          rit add repo --provider=Github --name=formulas-repo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1 && rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
