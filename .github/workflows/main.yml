@@ -12,9 +12,4 @@ jobs:
       uses: GuillaumeFalourd/ritchie-docker-actions@v5
       with:
         rit-command: rit add repo --provider=Github --name=formulas-repo --repoUrl=https://github.com/GuillaumeFalourd/formulas-python --priority=1
-
-    - name: Execute formula
-      id: ritchie-formula
-      uses: GuillaumeFalourd/ritchie-docker-actions@v5
-      with:
         rit-command: rit wiki search --rit_keywords=Ayrton Senna --rit_language=en
