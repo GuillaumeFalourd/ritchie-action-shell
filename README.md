@@ -1,6 +1,6 @@
-# ritchie-actions
+# ritchie-actions-shell
 
-This Github action currently only works for Ritchie CLI formulas implemented in **SHELL**.
+This Github action works for Ritchie CLI formulas implemented in **SHELL**.
 
 ## Use case
 
@@ -17,7 +17,7 @@ jobs:
     name: Ritchie Action
     steps:
     - name: Run Ritchie Action Command
-      uses: GuillaumeFalourd/ritchie-actions@v1.0
+      uses: GuillaumeFalourd/ritchie-actions-shell@v1.0
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
         rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
@@ -26,4 +26,4 @@ jobs:
 **Where:**
 
 - `rit-repo-url` is the Github formula repository url where the formula is located.
-- `rit-formula-command` is the formula command (with input flags if needed)
+- `rit-formula-command` is the formula command (with input flags if needed) implemented in Shell.
