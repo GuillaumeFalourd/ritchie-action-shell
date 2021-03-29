@@ -1,8 +1,8 @@
-# ritchie-actions-shell
+# ritchie-action-shell
 
 This Github action works for Ritchie CLI formulas implemented in **SHELL**.
 
-[![Action workflow](https://github.com/GuillaumeFalourd/ritchie-actions-shell/actions/workflows/main.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-actions-shell/actions/workflows/main.yml)
+[![Action workflow](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/main.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/main.yml)
 
 ## Use case
 
@@ -19,7 +19,7 @@ jobs:
     name: Ritchie Action
     steps:
     - name: Run Ritchie Action Command
-      uses: GuillaumeFalourd/ritchie-actions-shell@v1.0
+      uses: GuillaumeFalourd/ritchie-action-shell@v1.0
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
         rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
