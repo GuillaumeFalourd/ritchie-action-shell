@@ -1,4 +1,4 @@
-# ritchie-docker-actions
+# ritchie-actions
 
 This Github action currently only works for Ritchie CLI formulas implemented in **SHELL**.
 
