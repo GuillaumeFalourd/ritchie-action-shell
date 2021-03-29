@@ -19,7 +19,7 @@ jobs:
     name: Ritchie Action
     steps:
     - name: Run Ritchie Action Command
-      uses: GuillaumeFalourd/ritchie-action-shell@v1.0
+      uses: GuillaumeFalourd/ritchie-action-shell@v1.1
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
         rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
