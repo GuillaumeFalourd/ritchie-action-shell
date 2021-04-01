@@ -60,5 +60,5 @@ jobs:
 
 - `CREDENTIAL_GITHUB_USERNAME` is the GITHUB USERNAME saved [as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets).
 - `CREDENTIAL_GITHUB_TOKEN` is the [GITHUB PERSONAL ACCESS TOKEN](https://github.com/settings/tokens) with full repository access saved [as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets).
-- `rit-repo-url` is the Github formula **public** repository url where the formula is located.
+- `rit-repo-url` is the Github formula **private** repository url where the formula is located.
 - `rit-formula-command` is the formula command (with input flags if needed) implemented in Shell.
