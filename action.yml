@@ -11,9 +11,6 @@ inputs:
     description: 'Ritchie formula command with input flags'
     required: true
     default: 'rit --version'
-  github-token:
-    description: Github Access token
-    required: true
 
 runs:
   using: 'docker'
@@ -21,4 +18,3 @@ runs:
   args:
     - ${{ inputs.rit-repo-url }}
     - ${{ inputs.rit-formula-command }}
-    - ${{ inputs.github-token }}
