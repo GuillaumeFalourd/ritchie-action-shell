@@ -4,7 +4,7 @@ description: 'Execute Ritchie CLI actions'
 
 inputs:
   rit-repo-url:
-    description: 'Ritchie repository'
+    description: 'Ritchie formulas repository'
     required: true
     default: 'https://github.com/ZupIT/ritchie-formulas-demo'
   rit-formula-command:
@@ -18,3 +18,5 @@ runs:
   args:
     - ${{ inputs.rit-repo-url }}
     - ${{ inputs.rit-formula-command }}
+    - ${{ secrets.GITHUB_TOKEN }}
+    - ${{ secrets.GITHUB_ACTOR }}
