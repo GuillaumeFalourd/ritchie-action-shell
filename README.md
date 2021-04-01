@@ -19,7 +19,7 @@ jobs:
     name: Ritchie Action
     steps:
     - name: Run Ritchie Action Command
-      uses: GuillaumeFalourd/ritchie-action-shell@v1.0
+      uses: GuillaumeFalourd/ritchie-action-shell@v1.1
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
         rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
@@ -27,5 +27,5 @@ jobs:
 
 **Where:**
 
-- `rit-repo-url` is the Github formula repository url where the formula is located.
+- `rit-repo-url` is the Github formula **public** repository url where the formula is located.
 - `rit-formula-command` is the formula command (with input flags if needed) implemented in Shell.
