@@ -2,7 +2,9 @@
 
 This Github action works for Ritchie CLI formulas implemented in **SHELL**.
 
-[![Action workflow](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/main.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/main.yml)
+[![Action workflow (PUBLIC)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/public-repo-demo-workflow.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/public-repo-demo-workflow.yml)
+
+[![Action workflow (PRIVATE)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/private-repo-demo-workflow.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/private-repo-demo-workflow.yml)
 
 ## Use case
 
@@ -20,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Ritchie Action
     steps:
-    - name: Run Ritchie Action Command
-      uses: GuillaumeFalourd/ritchie-action-shell@v2.0
+    - name: Run Ritchie Action Command with PUBLIC repository
+      uses: GuillaumeFalourd/ritchie-action-shell@v2.1
       with:
         rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
         rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
@@ -46,8 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Ritchie Action
     steps:
-    - name: Run Ritchie Action Command (PRIVATE REPO)
-      uses: GuillaumeFalourd/ritchie-action-shell@v2.0
+    - name: Run Ritchie Action Command with PRIVATE repository
+      uses: GuillaumeFalourd/ritchie-action-shell@v2.1
       env:
         CREDENTIAL_GITHUB_USERNAME: ${{ secrets.CREDENTIAL_GITHUB_USERNAME }}
         CREDENTIAL_GITHUB_TOKEN: ${{ secrets.CREDENTIAL_GITHUB_TOKEN }}

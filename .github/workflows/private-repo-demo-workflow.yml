@@ -1,4 +1,4 @@
-name: Action workflow
+name: Action workflow (PRIVATE)
 
 on:
  push:
@@ -11,14 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Ritchie Action
     steps:
-
-    - name: Run Ritchie Action Command (PUBLIC REPO)
-      uses: GuillaumeFalourd/ritchie-action-shell@main
-      with:
-        rit-repo-url: https://github.com/ZupIT/ritchie-formulas-demo
-        rit-formula-command: rit demo coffee-shell --rit_name=Dennis --rit_coffee_type=espresso --rit_delivery=false
-
-    - name: Run Ritchie Action Command (PRIVATE REPO)
+    - name: Run Ritchie Action Command with PRIVATE repository
       uses: GuillaumeFalourd/ritchie-action-shell@main
       env:
         CREDENTIAL_GITHUB_USERNAME: ${{ secrets.CREDENTIAL_GITHUB_USERNAME }}
