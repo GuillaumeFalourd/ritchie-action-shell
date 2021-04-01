@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Ritchie Action
     steps:
-      - name: Run Ritchie Action Command (PRIVATE REPO)
+    - name: Run Ritchie Action Command (PRIVATE REPO)
       uses: GuillaumeFalourd/ritchie-action-shell@v2.0
       env:
         CREDENTIAL_GITHUB_USERNAME: ${{ secrets.CREDENTIAL_GITHUB_USERNAME }}
