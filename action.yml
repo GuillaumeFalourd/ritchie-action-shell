@@ -18,5 +18,3 @@ runs:
   args:
     - ${{ inputs.rit-repo-url }}
     - ${{ inputs.rit-formula-command }}
-    - ${{ secrets.GITHUB_TOKEN }}
-    - ${{ secrets.GITHUB_ACTOR }}
