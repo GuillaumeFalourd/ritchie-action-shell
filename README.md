@@ -6,7 +6,7 @@ This Github action works for Ritchie CLI formulas implemented in **SHELL**.
 
 [![Action workflow (PRIVATE)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/private-repo-demo-workflow.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/private-repo-demo-workflow.yml)
 
-## Use case
+## Use cases
 
 ### Executing a formula from a PUBLIC repository
 
