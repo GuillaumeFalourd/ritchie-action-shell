@@ -1,6 +1,6 @@
 name: 'Ritchie CLI action'
 
-description: 'Execute Ritchie CLI actions'
+description: 'Execute Ritchie CLI formulas implemented in SHELL'
 
 inputs:
   rit-repo-url:
