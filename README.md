@@ -1,6 +1,6 @@
 # ritchie-action-shell
 
-This Github action works for Ritchie CLI formulas implemented in **SHELL**.
+This Github action works for [Ritchie CLI](https://ritchiecli.io/) formulas implemented in **SHELL**.
 
 [![Action workflow (PUBLIC)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/public-repo-demo-workflow.yml/badge.svg)](https://github.com/GuillaumeFalourd/ritchie-action-shell/actions/workflows/public-repo-demo-workflow.yml)
 
