@@ -1,4 +1,4 @@
-name: 'Ritchie CLI action'
+name: 'Ritchie CLI action (shell)'
 
 description: 'Execute Ritchie CLI formulas implemented in SHELL'
 
