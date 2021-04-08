@@ -18,3 +18,7 @@ runs:
   args:
     - ${{ inputs.rit-repo-url }}
     - ${{ inputs.rit-formula-command }}
+
+branding:
+  icon: "settings"
+  color: "orange"
